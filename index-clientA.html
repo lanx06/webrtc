@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/0.3.9/peer.min.js"></script>
     <script>
-        const peer = new Peer('A', { host: 'localhost', port: 9000, path: '/api' });
+        const peer = new Peer('A', { host: 'https://x06-webrtc.herokuapp.com', path: '/api' });
 
         peer.on('open', function (id) {
             console.log('My peer ID is: ' + id);
