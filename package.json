@@ -1,0 +1,25 @@
+{
+  "name": "webrtc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webrtc.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ip": "^1.1.5",
+    "peer": "^0.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node webrtc.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanx06/webrtc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lanx06/webrtc/issues"
+  },
+  "homepage": "https://github.com/lanx06/webrtc#readme"
+}
