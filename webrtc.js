@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const expressPeerServer = require('peer').ExpressPeerServer;
-const server = app.listen(process.env.PORT || 9000, () => console.log("Server is running..."));
+const port=process.env.PORT || 9000
+const server = app.listen(port, () => console.log("Server is running..."));
 
 const peerserver = expressPeerServer(server);
 
@@ -13,6 +14,9 @@ app.get('/a', function(req, res){
 
 app.get('/b', function(req, res){
     res.sendFile(__dirname + "/index-clientB.html");
+});
+app.get('/port', function(req, res){
+    res.end(port)
 });
 
 peerserver.on('connection', (id) => {
