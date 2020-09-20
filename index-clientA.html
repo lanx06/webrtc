@@ -15,7 +15,7 @@
         function get_peer()
         {}
 
-        const peer = new Peer('A', { host: 'https://x06-webrtc.herokuapp.com',port:443, path: '/api' });
+        const peer = new Peer('A', { host: 'x06-webrtc.herokuapp.com',port:443, path: '/api' });
         
         peer.on('open', function (id) {
             console.log('My peer ID is: ' + id);
