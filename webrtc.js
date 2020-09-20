@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const expressPeerServer = require('peer').ExpressPeerServer;
-const server = app.listen(9000);
+const server = app.listen(process.env.PORT || 9000, () => console.log("Server is running..."));
 
 const peerserver = expressPeerServer(server);
 
